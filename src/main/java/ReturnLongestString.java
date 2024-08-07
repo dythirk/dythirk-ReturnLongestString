@@ -8,6 +8,13 @@ public class ReturnLongestString {
      * @return the longest String within arr. You can assume that there are no ties for the longest string.
      */
     public String longest(String[] arr){
-        return null;
+        int position = 0;
+        int howLong = 0;
+        for (int i = 0; i < arr.length; i++){
+            if (howLong < arr[i].length()){
+                howlong = i;
+            }
+        }
+        return arr[howlong];
     }
 }
